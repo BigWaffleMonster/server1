@@ -15,7 +15,7 @@ jobs:
         run: docker build . --file Dockerfile -t bigwafflemonster/server1:latest
 
       - name: Run Docker Conteiner
-        run: docker run -p 3002:3002 -d bigwafflemonster/server2:latest
+        run: docker run -p 3002:3002 -d bigwafflemonster/server1:latest
       - name: Setup node
         uses: actions/setup-node@v3
         with:
