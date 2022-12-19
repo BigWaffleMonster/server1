@@ -20,3 +20,5 @@ app.get('/__health', (req, res) => {
 app.listen(3002, () => {
   console.log('Server startes on 3000')
 })
+
+export default app
